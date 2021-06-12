@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<ROOT_DIR>
+    <services>
+        <service name="sample" class="Service\SampleService" injections=""/>
+    </services>
+    
+    <providers>
+        <provider name="user.pro" class="Test1Pack\Providers\UserProvider" injections=""/>
+    </providers>
+</ROOT_DIR>

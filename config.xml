@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    
+   
+    <params> </params>
+    
+    <!-- CONFIGURATION RELATED TO PACKS IN THE PROJECT -->
+    <packs>
+        <pack name="SitePack" prefix="" secured="false"  template="site-layout" />
+        <pack name="AdminPack" prefix="/admin" secured="true" template="admin-layout" middlewares=""  />
+    </packs>
+    
+    
+    <!--  CONFIGURATION RELATED TO THE DATABASES  -->
+    <databases>
+        <database name="db_name" host="localhost" user="root" password="" dbms="mysql"/>
+    </databases>
+    
+    <superadmin username="admin"  password="admin" code="SUP" />
+        
+    
+    
+    <!--  CONFIGURATION RELATED TO ROUTING   -->
+    <routes-includes-project-folder value ="true" />
+    
+    <app-routes-default>
+        <!-- specify the names used in the pack's routing file for the following routes -->
+        <route-names  _login="adm.login"  _404 ="" _500 =""  />
+        
+        <!-- the url: "/routes"  will list all the routes defined in the project-->
+        <route-all prefix = "/routes" active="true"  />
+    </app-routes-default>
+    
+</root>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    
+    <controller name="Home" prefix="" >
+        <route name="site.index" path="" action="index" params=""   />
+        <route name="site.search" path="search" action="" params=""   />
+    </controller>
+    
+</root>

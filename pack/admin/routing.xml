@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   
+    <controller name="Login" prefix="" >
+        <route name="adm.login" path="" action="login" secured="false" />
+        <route name="adm.login.check" path="/checklogin" action="check"    secured="false"/>
+        <route name="adm.logout" path="/logout" action="logout"  params=""  secured="false"/>
+    </controller>
+    
+    <controller name="Dashboard" prefix="/dashboard" >
+        <route name="adm.dash.index" path=""  action="index"  params=""  />
+        <route name="adm.dash.manager" path="/manager" action="manager"  params=""  />
+        <route name="adm.dash.super" path="/super" action="superAdmin"  params=""  />
+    </controller>
+ 
+    
+</root>

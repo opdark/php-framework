@@ -1,0 +1,6 @@
+#Options -MultiViews
+RewriteEngine on
+AddType text/css .css
+RewriteCond %{REQUEST_URI} !^(.*)\.(html|jpg|css|js|img|png|woff2|woff|ttf|map|mp4|mp3|flv|avi)$
+
+RewriteRule ^(.*)$ web/bootstrap.php [QSA,L]
