@@ -2,7 +2,6 @@
 
 include '../vendor/core/autoloader.php';
 
-
 $app = new \Core\Application();
 
 
